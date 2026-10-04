@@ -2,7 +2,7 @@ package javaapplication5.MantPersona.src.mantPersona;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 public class MantPersona {
-	static final String ruta = "C:\\Users\\Manstor21\JavaDAM_1\\";
+	static final String ruta = System.getProperty("user.dir") + "/data/";
 	int menu()throws IOException{
 		Teclado t = new Teclado();
 		int op = 0;
